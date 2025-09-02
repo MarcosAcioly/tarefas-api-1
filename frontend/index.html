@@ -29,6 +29,7 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>Cadastro de Tarefas</h1>
         <form id="tarefaForm">
@@ -46,6 +47,22 @@
         <h2>Tarefas Cadastradas</h2>
         <div id="tarefasList"></div>
     </div>
+
+
+    <div id="root"></div>
+	<div vm class="enabled">
+		<div vm-access-button class="active"></div>
+		<div vm-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>														
+    <script src="https://vlibas.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+	<script type="module" src="/src/main.tsx"></script>
+
+
 </body>
 
 <script src="script.js"></script>
